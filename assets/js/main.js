@@ -24,16 +24,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Smooth scroll for nav links
+  // Smooth scroll for nav links (same page only)
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
+      const href = link.getAttribute('href');
       
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+      // Only prevent default for same-page anchors (starting with #)
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const targetSection = document.querySelector(href);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
       }
+      // Allow normal navigation for cross-page links (index.html, publications.html, hobbies.html)
     });
   });
 });
