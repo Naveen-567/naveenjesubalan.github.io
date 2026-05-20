@@ -7,6 +7,10 @@ title: About
 
 I am a PhD Candidate at the **Indian Institute of Technology, Delhi** (IIT Delhi), pursuing research in Digital Twins and Cyber-Physical Systems for bioprocessing. My work combines process engineering, control systems, and artificial intelligence to advance biopharmaceutical manufacturing.
 
+<div class="about-content">
+  <img src="/assets/images/profile.jpg" alt="Naveen Jesubalan" class="profile-image" style="width: 120px; height: 120px;">
+</div>
+
 ## Research Interests
 
 - **Digital Twins & CPS:** Developing virtual representations of bioprocesses for real-time monitoring and control
@@ -28,22 +32,58 @@ Over the course of my PhD, I have developed expertise in:
 - Cloud platforms (AWS, Google Cloud, Microsoft Azure)
 - Real-time systems and embedded control
 
-## Skills & Expertise
+## Technical Skills
 
-### Process Modeling & Simulation
-CADET, SciPy, SymPy, Chromatography, Membrane Operations
+<div class="skill-category">
+  <h4>Process Modeling & Simulation</h4>
+  <div class="skill-list">
+    <span class="skill-badge">CADET</span>
+    <span class="skill-badge">SciPy</span>
+    <span class="skill-badge">SymPy</span>
+    <span class="skill-badge">Chromatography</span>
+    <span class="skill-badge">Membrane Operations</span>
+  </div>
+</div>
 
-### AI & Machine Learning
-PyTorch, TensorFlow, scikit-learn, OpenCV
+<div class="skill-category">
+  <h4>AI & Machine Learning</h4>
+  <div class="skill-list">
+    <span class="skill-badge">PyTorch</span>
+    <span class="skill-badge">TensorFlow</span>
+    <span class="skill-badge">scikit-learn</span>
+    <span class="skill-badge">OpenCV</span>
+  </div>
+</div>
 
-### Cloud & Computing
-AWS, Google Cloud, Microsoft Azure
+<div class="skill-category">
+  <h4>Cloud & Computing</h4>
+  <div class="skill-list">
+    <span class="skill-badge">AWS</span>
+    <span class="skill-badge">Google Cloud</span>
+    <span class="skill-badge">Microsoft Azure</span>
+  </div>
+</div>
 
-### Programming Languages
-Python, MATLAB, C, HTML, LaTeX
+<div class="skill-category">
+  <h4>Programming Languages</h4>
+  <div class="skill-list">
+    <span class="skill-badge">Python</span>
+    <span class="skill-badge">MATLAB</span>
+    <span class="skill-badge">C</span>
+    <span class="skill-badge">HTML</span>
+    <span class="skill-badge">LaTeX</span>
+  </div>
+</div>
 
-### Operating Systems
-macOS, Windows, GNOME, Cinnamon
+<div class="skill-category">
+  <h4>Operating Systems</h4>
+  <div class="skill-list">
+    <span class="skill-badge">macOS</span>
+    <span class="skill-badge">Windows</span>
+    <span class="skill-badge">GNOME</span>
+    <span class="skill-badge">Cinnamon</span>
+  </div>
+</div>
 
 ## Contact
 

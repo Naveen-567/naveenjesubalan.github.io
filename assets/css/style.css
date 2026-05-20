@@ -67,24 +67,64 @@ main {
   padding: 3rem var(--spacing-unit);
 }
 
+/* Profile Image */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+  margin: 0 auto 1.5rem;
+  display: block;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+}
+
 /* Header/Hero section */
 .hero {
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0 3rem 0;
   border-bottom: 2px solid var(--light-bg);
   margin-bottom: 2rem;
+  animation: slideInDown 0.6s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+.hero h1:hover {
+  color: var(--accent-color);
 }
 
 .hero .subtitle {
   font-size: 1.2rem;
   color: var(--secondary-color);
   margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.hero .subtitle:hover {
+  color: var(--accent-color);
 }
 
 /* Section heading */
@@ -116,32 +156,66 @@ p {
   gap: 2rem;
   flex-wrap: wrap;
   margin: 2rem 0;
+  animation: slideInUp 0.6s ease;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .social-links a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: white;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
+  background-color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .social-links a:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
 /* About section */
 .about-content {
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
   padding: 1.5rem;
   border-left: 4px solid var(--accent-color);
   margin: 1.5rem 0;
-  border-radius: 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.about-content:hover {
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
+  transform: translateX(5px);
 }
 
 /* Skills */
 .skill-category {
   margin: 2rem 0;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .skill-category h4 {
@@ -149,38 +223,51 @@ p {
   color: var(--primary-color);
   margin-bottom: 0.75rem;
   font-weight: 600;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 0.75rem;
 }
 
 .skill-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
 .skill-badge {
-  background-color: var(--light-bg);
-  color: var(--primary-color);
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
+  background: linear-gradient(135deg, var(--accent-color), #2980b9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   font-size: 0.9rem;
-  border: 1px solid var(--border-color);
+  border: none;
   display: inline-block;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.2);
 }
 
 .skill-badge:hover {
-  background-color: var(--accent-color);
-  color: white;
-  border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(135deg, #2980b9, var(--accent-color));
 }
 
 /* Publications */
 .publication {
   margin: 2rem 0;
   padding: 1.5rem;
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
   border-left: 4px solid var(--accent-color);
-  border-radius: 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.6s ease;
+}
+
+.publication:hover {
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.15);
+  transform: translateY(-3px);
 }
 
 .publication-title {
