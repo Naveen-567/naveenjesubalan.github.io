@@ -1,0 +1,33 @@
+# Site settings
+title: Naveen Jesubalan
+email: naveengpjuly6@gmail.com
+description: PhD Candidate at IIT Delhi | Digital Twins & Cyber-Physical Systems | Bioprocessing & AI/ML
+
+# URL settings
+url: "https://naveenjesubalan.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Collections
+collections:
+  publications:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Social links
+social_links:
+  gmail: "mailto:naveengpjuly6@gmail.com"
+  linkedin: "https://www.linkedin.com/in/naveen-gp/"
+  google_scholar: "https://scholar.google.com/citations?user=bidAu0EAAAAJ&hl=en"
+  bluesky: "https://bsky.app/profile/naveen-567.bsky.social"
+  twitter: "https://x.com/NaveenJesubalan"

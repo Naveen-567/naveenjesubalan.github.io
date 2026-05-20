@@ -1,0 +1,272 @@
+/* Minimal Academic Website */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --light-bg: #ecf0f1;
+  --text-color: #2c3e50;
+  --border-color: #bdc3c7;
+  --spacing-unit: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--primary-color);
+  padding: var(--spacing-unit) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--border-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Main container */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem var(--spacing-unit);
+}
+
+/* Header/Hero section */
+.hero {
+  text-align: center;
+  padding: 3rem 0;
+  border-bottom: 2px solid var(--light-bg);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Section heading */
+h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* About section */
+.about-content {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  margin: 1.5rem 0;
+  border-radius: 0;
+}
+
+/* Skills */
+.skill-category {
+  margin: 2rem 0;
+}
+
+.skill-category h4 {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-badge {
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  display: inline-block;
+}
+
+.skill-badge:hover {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+/* Publications */
+.publication {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 0;
+}
+
+.publication-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.publication-meta {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.publication-year {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem var(--spacing-unit);
+  border-top: 1px solid var(--light-bg);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  main {
+    padding: 2rem var(--spacing-unit);
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+}
+
+/* Links */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
